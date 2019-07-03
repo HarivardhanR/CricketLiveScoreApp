@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/team1"
+                android:text="@string/team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/team2"
+                android:text="@string/team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/team2"
+                android:layout_centerInParent="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_margin="10dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/batsmenCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+
+        <LinearLayout
+            android:id="@+id/BatsmanLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="@string/batsman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/runsLinearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/r" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ballsLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/foursLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/_4s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sixesLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/_6s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/srLinearLayout"
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@string/sr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/bowlersCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+
+                <LinearLayout
+                    android:id="@+id/bowlersLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="@string/bowler"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/oversLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/o" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/maidensLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brunsLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/r"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wicketsLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="10"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/w"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/econLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_weight="20"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/econ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
